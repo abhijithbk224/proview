@@ -1,16 +1,63 @@
 ---
+import '../styles/global.css';
+import AnimatedSections from 'AnimatedSections';
+import { Navbar1 } from '@/components/blocks/proview-nav';
+import { Logos3 } from '@/components/logos3';
+import { Feature72 } from '@/components/features-home';
+import { Feature1 } from '@/components/Integrations';
+import { FeaturesSectionWithHoverEffects } from '@/components/key-benefits';
+import { Footer2 } from '@/components/footer2';
+import  HeroSection  from '@/components/heroUpdated';
+import { Testimonial } from '@/components/testimonial-card'
+
+
 
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>AI-Powered Online Proctoring Software - Proview</title>
+    <meta name="description" content="Scale up your remote proctoring exams with Proview's AI powered remote proctoring software. Expert monitoring, secure tests, and seamless integration">
+  </head>
+
+  <body class="bg-white text-black m-0 overflow-x-hidden">
+    <!-- ✅ Navbar (no container wrapping) -->
+    <Navbar1 client:load />
+
+    <!-- ✅ Main content section -->
+    <main>
+  <AnimatedSections client:load>
+    <div class="fade-section"><HeroSection /></div>
+    <div class="fade-section"><Logos3 /></div>
+    <div class="fade-section"><Feature72 /></div>
+    <div class="fade-section"><Feature1 /></div>
+    <div class="fade-section"><FeaturesSectionWithHoverEffects /></div>
+    <div class="fade-section"><Footer2 /></div>
+    
+    
+  </AnimatedSections>
+</main>
+  </body>
 </html>
+<script is:inline>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('section-visible');
+        }, index * 200); // staggered delay
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.section-fade').forEach((section) => {
+    observer.observe(section);
+  });
+</script>
