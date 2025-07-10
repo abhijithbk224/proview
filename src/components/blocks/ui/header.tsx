@@ -146,7 +146,7 @@ const Navbar3 = ({
               </a>
             )
           )}
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+          <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
             <a href={auth.signup.url}>{auth.signup.text}</a>
           </Button>
         </div>
