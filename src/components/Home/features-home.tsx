@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 
 interface Feature {
@@ -23,7 +24,7 @@ const Feature72 = ({
       description:
         "Ensure exam authenticity for large student groups with AI-driven proctoring featuring secondary camera. Employ multiple authentication and fraud detection layers to create a secure exam environment.",
       image: "http://proview.io/hs-fs/hubfs/Higher%20education.webp?width=1200&height=640&name=Higher%20education.webp",
-      linkUrl: "https://www.shadcnblocks.com/feature1",
+      linkUrl: "/university-proctoring-solution",
     },
     {
       id: "feature-2",
@@ -31,54 +32,52 @@ const Feature72 = ({
       description:
         "Ensure the integrity of your certification exams with multiple layers of authentication, fraud detection, and a lock-down exam browser that disables access to unauthorized apps, websites, and keyboard shortcuts.",
       image: "https://proview.io/hs-fs/hubfs/Professional%20Education.webp?width=1200&height=640&name=Professional%20Education.webp ",
-      linkUrl: "https://www.shadcnblocks.com/feature2",
+      linkUrl: "/certification-and-training-proctoring-solution",
     },
   ],
 }: Feature72Props) => {
   return (
-    <section className="py-16 md:py-26">
-      <div className="container flex flex-col gap-8 lg:px-0 px-5 mx-auto">
-        <div className="text-center">
-          <h3 className="mb-3 text-2xl font-bold md:mb-4 md:text-4xl lg:mb-6">
+    <section className="py-16 md:py-24 bg-white">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 mb-4">
             {heading}
-          </h3>
+          </h2>
         </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
-          {features.map((feature) => (
+        
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-12 max-w-6xl mx-auto">
+          {features.map((feature, index) => (
             <div
               key={feature.id}
-              className="group relative flex flex-col overflow-clip rounded-xl border border-border "
+              className={`group ${
+                index === 0 
+                  ? 'md:translate-x-4 lg:translate-x-6' 
+                  : 'md:translate-x-4 lg:translate-x-6'
+              }`}
             >
-              {/* Hover Gradient Overlay */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-20 bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none transition-opacity duration-300 rounded-xl" />
-
-              <div>
+              <div className="relative overflow-hidden rounded-xl mb-6 shadow-md">
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="aspect-video h-full w-full object-cover object-center rounded-t-xl"
+                  className="w-full h-48 md:h-56 lg:h-64 object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="relative z-10 px-6 py-8 md:px-8 md:py-10 lg:px-10 lg:py-12">
-                {/* Title with Hover Bar */}
-                <h3 className="mb-3 text-lg font-semibold md:mb-4 md:text-2xl lg:mb-6 relative inline-block pl-6 group-hover:pl-8 transition-all duration-300">
-                  {/* Vertical bar: absolute positioned on left */}
-                  <span
-                    className="absolute left-0 top-1/2 -translate-y-1/2 h-6 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover:bg-blue-500 transition-colors duration-300 origin-center"
-                  />
-                  {/* Title text */}
-                  <span className="relative group-hover:translate-x-2 transition-transform duration-300">
-                    {feature.title}
-                  </span>
+              
+              <div className="space-y-4">
+                <h3 className="text-base md:text-lg lg:text-xl font-bold text-gray-900 leading-tight">
+                  {feature.title}
                 </h3>
-
-                <p className="mb-6 text-muted-foreground lg:text-lg">{feature.description}</p>
+                
+                <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+                  {feature.description}
+                </p>
+                
                 <a
                   href={feature.linkUrl}
-                  className="group inline-flex items-center text-base font-medium text-[#1d4fd8] hover:underline"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold text-base group-hover:underline transition-colors duration-200"
                 >
                   {feature.linkText || "Learn More"}
-                  <ArrowRight className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </a>
               </div>
             </div>

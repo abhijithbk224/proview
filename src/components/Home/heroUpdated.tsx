@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 
-export default function HeroSection(): JSX.Element {
+export default function HeroSection() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -36,7 +36,7 @@ export default function HeroSection(): JSX.Element {
       </header>
 
       <div className="relative isolate pt-14">
-        {/* Top Blurb */}
+      
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -50,7 +50,7 @@ export default function HeroSection(): JSX.Element {
           />
         </div>
 
-        {/* Hero Content */}
+      
         <div className="py-24 sm:py-32 lg:pb-40">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-4xl text-center">
@@ -62,7 +62,7 @@ export default function HeroSection(): JSX.Element {
               </p>
             </div>
 
-            {/* Supademo Embed */}
+          
             <div className="mt-2 sm:mt-2 w-full max-w-full text-center">
               <div
                 className="relative mx-auto"
@@ -88,7 +88,7 @@ export default function HeroSection(): JSX.Element {
           </div>
         </div>
 
-        {/* Bottom Blurb */}
+       
         <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
@@ -105,3 +105,4 @@ export default function HeroSection(): JSX.Element {
     </div>
   )
 }
+

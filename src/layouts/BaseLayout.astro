@@ -1,0 +1,30 @@
+---
+import '../styles/global.css';
+const { content } = Astro.props;
+
+// Destructure title and description from `content`
+const { title, description } = content || {};
+
+import { Navbar1 } from '@/components/blocks/proview-nav';
+import { Footer2 } from '@/components/footer2';
+import Footer7 from '@/components/blocks/ui/footer.tsx';
+import { Navbar3 } from '@/components/blocks/ui/header.tsx';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    {title && <title>{title}</title>}
+    {description && <meta name="description" content={description} />}
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <Navbar3 client:load />
+    <slot />
+    <Footer7 />
+  </body>
+</html>

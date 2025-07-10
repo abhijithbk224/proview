@@ -1,3 +1,4 @@
+
 import React from "react";
 
 interface Feature1Props {
@@ -22,7 +23,7 @@ const Feature1 = ({
 }: Feature1Props) => {
   return (
     <section className="py-8">
-      <div className="container px-5 lg:px-0 mx-auto text-center">
+      <div className="container px-5 lg:px-13 mx-auto text-center">
         <h2 className="my-12 mt-0 text-2xl font-semibold text-balance lg:text-4xl leading-tight">
           {title}
         </h2>
