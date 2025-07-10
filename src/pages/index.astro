@@ -3,15 +3,16 @@ import '../styles/global.css';
 import AnimatedSections from 'AnimatedSections';
 import { Navbar1 } from '@/components/blocks/proview-nav';
 import { Logos3 } from '@/components/logos3';
-import { Feature72 } from '@/components/features-home';
+import { Feature72 } from '@/components/Home/features-home';
 import { Feature1 } from '@/components/Integrations';
-import { FeaturesSectionWithHoverEffects } from '@/components/key-benefits';
+import { FeaturesSectionWithHoverEffects } from '@/components/Home/key-benefits';
 import { Footer2 } from '@/components/footer2';
-import  HeroSection  from '@/components/heroUpdated';
-import { Testimonial } from '@/components/testimonial-card'
-
-
-
+import  HeroSection  from '@/components/Home/heroUpdated';
+import { Testimonial } from '@/components/testimonial-card';
+import Footer7 from '@/components/blocks/ui/footer.tsx';
+import {Navbar3} from '@/components/blocks/ui/header.tsx';
+import {Hero1} from '@/components/blocks/ui/imageonright.tsx';
+import {Integration12} from '@/components/blocks/ui/blockkeybenefitsproducts.tsx'
 ---
 
 <html lang="en">
@@ -20,25 +21,30 @@ import { Testimonial } from '@/components/testimonial-card'
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>AI-Powered Online Proctoring Software - Proview</title>
+    <title>AI Proctoring Software - Proview</title>
     <meta name="description" content="Scale up your remote proctoring exams with Proview's AI powered remote proctoring software. Expert monitoring, secure tests, and seamless integration">
   </head>
 
   <body class="bg-white text-black m-0 overflow-x-hidden">
     <!-- ✅ Navbar (no container wrapping) -->
-    <Navbar1 client:load />
+    <Navbar3 client:load />
 
     <!-- ✅ Main content section -->
-    <main>
-  <AnimatedSections client:load>
-    <div class="fade-section"><HeroSection /></div>
-    <div class="fade-section"><Logos3 /></div>
+  <main>
+    <AnimatedSections client:load>
+    <div class="fade-section"><Hero1 heading='Enhanced Exam Security with Our AI-Powered Remote Proctoring Software' description='Reliable, user-friendly and affordable proctoring solution for low to high-stakes exams'image={{
+      src:'https://proview.io/hs-fs/hubfs/Home%20Page/Home_banner.webp?width=1413&height=971&name=Home_banner.webp',
+      alt:'proviewimage'
+    }} blue={true} buttons={{
+      primary: { text: "Get Started Today", url: "https://www.talview.com/request-a-demo" }
+    }}
+    />
+</div>
+    <div class="fade-section" ><Logos3 /></div>
     <div class="fade-section"><Feature72 /></div>
     <div class="fade-section"><Feature1 /></div>
     <div class="fade-section"><FeaturesSectionWithHoverEffects /></div>
-    <div class="fade-section"><Footer2 /></div>
-    
-    
+    <div class="fade-section"><Footer7 /></div>   
   </AnimatedSections>
 </main>
   </body>

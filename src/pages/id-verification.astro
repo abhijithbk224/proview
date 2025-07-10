@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { FeaturesSectionWithHoverEffects } from '@/components/Home/key-benefits';
+import {Hero1} from '@/components/blocks/ui/imageonright.tsx';
+import {Feature5} from '@/components/blocks/ui/imageonleft.tsx';
+import {Cta11} from '@/components/blocks/ui/freedemo.tsx';
+import {Achievements} from '@/components/blocks/ui/achievements.tsx';
+import {Integration11} from '@/components/blocks/ui/blockforproducts.tsx'
+import {Integration12} from '@/components/blocks/ui/blockkeybenefitsproducts.tsx'
+---
+<BaseLayout content={{ title: "Candidate ID Verification in Online Proctoring - Proview", description:"Prevent candidate impersonation in remote exams with our advanced Candidate ID Verification in online proctoring solutions. Click here to know more." }}>
+  <Hero1
+    heading="Identity Verification"
+    description="Enhance academic exam security with face-photo ID matching for foolproof candidate validation."
+    buttons={{
+      primary: { text: "Get a Demo", url: "/signup" }
+    }}
+    image={{
+      src: "https://proview.io/hs-fs/hubfs/Product%20pages/browser1.webp?width=1506&height=999&name=browser1.webp",
+      alt: "Automated proctoring dashboard"
+    }}
+    blue=true
+  /> 
+  <section class="py-12 bg-white">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl">
+      <h2 class="text-3xl font-bold text-[#1A3559] text-center">
+        Seamless Verification in Three Steps: Enhancing Online Exam Integrity
+      </h2>
+      <p class="mt-4 text-lg text-[#1A3559] text-center">
+        Candidate impersonation is a pressing issue in online exams. It undermines academic integrity, leading to unfair results and devaluing educational efforts. Preventing proxy candidates is crucial to maintain the credibility and effectiveness of academic assessments.
+      </p>
+    </div>
+  </section>
+
+  <Integration11  data={[
+    {
+      icon:'https://proview.io/hubfs/Product%20pages/photo.svg',
+      title:'Step 1 - Photo ID Verification',
+      description:'We use the webcam to click a picture of the Photo ID or a soft-copy can be uploaded from the device to log a picture of the ID.'
+    },
+    {
+      icon:'https://proview.io/hubfs/Product%20pages/Face%20verification.svg',
+      title:'Step 2 - Face Verification',
+      description:'An image of the candidate is captured where the face is clearly visible to verify the correct test-taker is present.'
+    },
+     {
+      icon:'https://proview.io/hubfs/Product%20pages/360.svg',
+      title:'Step 3 - 360 Degree Environment Check',
+      description:'Candidate room check with the ability to add a secondary camera ensures a complaint test environment for secure exams.'
+    },
+  ]}/>
+
+  <Feature5
+    title="Prevent Proxy Candidates"
+    description="Our three-factor authentication system helps identify imposters and guarantees that only the correct candidate can take the exam, securing online exams against candidate fraud."
+    imageSrc="https://proview.io/hs-fs/hubfs/Product%20pages/Prevent%20Proxy%20Candidates.png?width=1322&height=797&name=Prevent%20Proxy%20Candidates.png"
+    imageAlt="image.png"
+    heading='Overview of Identity Verification Features'
+  />
+  <Hero1
+    heading="Maintain Exam Integrity"
+    description="Multiple layers of authentication uphold exam integrity by verifying the candidate identity to guarantee a reliable and credible assessment process."
+    buttons={{
+      primary: { text: "Get a Demo", url: "/signup" }
+    }}
+    image={{
+      src: "https://proview.io/hs-fs/hubfs/Product%20pages/Verify%20Test%20Taker%20Identity%20Before%20the%20Exam-1.png?width=1301&height=744&name=Verify%20Test%20Taker%20Identity%20Before%20the%20Exam-1.png",
+      alt: "Automated proctoring dashboard"
+    }}
+  />
+   <Feature5
+    title="Ensure Exam Fairness"
+    description="ID verification, along with auto-detection and flagging of suspicious behavior, promotes fairness and upholds academic integrity during online exams."
+    imageSrc="https://proview.io/hs-fs/hubfs/Product%20pages/Detailed%20Integrity%20Score.png?width=1332&height=698&name=Detailed%20Integrity%20Score.png"
+    imageAlt="image.png"
+  />
+   <Hero1
+    heading="Deterrent to Cheating"
+    description="Stringent ID verification and effective fraud detection act as a deterrent mechanism to potential cheaters, enhancing the security of the exam."
+    image={{
+      src: "https://proview.io/hs-fs/hubfs/Product%20pages/Deterrent%20to%20Cheating.png?width=1308&height=738&name=Deterrent%20to%20Cheating.png",
+      alt: "Automated proctoring dashboard"
+    }}
+  />
+   
+  <Achievements/>
+ <Integration12  title='Key Benefits'  data={[
+  {
+    icon:'https://proview.io/hubfs/Product%20pages/Prevent%20Candidate%20%20Impersonation.svg',
+    title:'Prevent Candidate Impersonation',
+    description:'Verify candidates with 3-factor authentication to avoid proxy candidates.'
+  },
+   {
+    icon:'https://proview.io/hubfs/Product%20pages/Award%20winning%20%20support.svg',
+    title:'Award-Winning Support',
+    description:'Partner with our team with round the clock support for candidates.'
+  },
+    {
+    icon:'https://proview.io/hubfs/Product%20pages/Secure%20Browser.svg',
+    title:'Secure Browser',
+    description:'Secure lockdown browser to restrict access unauthorized exam material.'
+  },
+   {
+    icon:'https://proview.io/hubfs/Product%20pages/Exam%20watermark.svg',
+    title:'Exam Watermark',
+    description:'Prevent content theft by with unique candidate ID embedded on test page.'
+  }
+
+ ]} />
+<Cta11  heading="Prevent Candidate Impersonation with Proview." buttons={{
+  primary:{
+    text:'Try free demo',
+    url:'https://www.talview.com/request-a-demo'
+  }}
+}/>
+
+</BaseLayout>

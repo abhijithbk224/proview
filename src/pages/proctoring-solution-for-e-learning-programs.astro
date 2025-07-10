@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Hero1 } from '@/components/blocks/ui/imageonright.tsx';
+import { Feature5 } from '@/components/blocks/ui/imageonleft.tsx';
+import { Logos4 } from '@/components/blocks/ui/scrolldownlogos.tsx';
+import { Integration9 } from '@/components/blocks/ui/blockforproctoring.tsx';
+import {Cta11} from '@/components/blocks/ui/freedemo.tsx';
+import {Achievements} from '@/components/blocks/ui/achievements.tsx';
+---
+
+<BaseLayout content={{ title: "Trusted E-Learning Proctoring Software for Online Exam",description:"Enhance e-learning credibility with Proview online proctoring. Create a secure exam environment with proctoring software for online exams." }}>
+
+  {/* 1st Hero1 */}
+  <Hero1
+    heading="Empower E-Learning Excellence with Proview's Secure Proctoring Solution"
+    description="Secure exams in your e-learning programs with our trusted proctoring software, ensuring integrity and enhancing academic credibility"
+    buttons={{
+      primary: { text: "Get a Demo", url: "/signup" }
+    }}
+    image={{
+      src: "https://proview.io/hs-fs/hubfs/Solution%20page/Banner-1.webp?width=1476&height=912&name=Banner-1.webp",
+      alt: "Secure Proctoring Banner"
+    }}
+    blue=true
+  />
+   <Logos4 heading ='Our Trusted Customers' logos={
+   [ {
+      id: "logo-1",
+      description: "Logo 1",
+      image: "https://proview.io/hs-fs/hubfs/Home%20Page/cambridge.png?width=557&height=306&name=cambridge.png",
+      className: "h-7 w-auto",
+    },
+    {
+      id: "logo-2",
+      description: "Logo 2",
+      image: "https://proview.io/hs-fs/hubfs/Group%201272628565.png?width=557&height=306&name=Group%201272628565.png",
+      className: "h-7 w-auto",
+    },
+    {
+      id: "logo-3",
+      description: "Logo 3",
+      image: "https://proview.io/hs-fs/hubfs/Home%20Page/nvidia.png?width=557&height=306&name=nvidia.png",
+      className: "h-7 w-auto",
+    },
+    {
+      id: "logo-4",
+      description: "Logo 4",
+      image: "https://proview.io/hs-fs/hubfs/Home%20Page/Group%201272628564.png?width=557&height=306&name=Group%201272628564.png",
+      className: "h-7 w-auto",
+    },
+    {
+      id: "logo-5",
+      description: "Logo 5",
+      image: "https://proview.io/hs-fs/hubfs/Group%201272628567.png?width=557&height=306&name=Group%201272628567.png",
+      className: "h-7 w-auto",
+    },
+     {
+       id: "logo-6",
+       description: "Logo 6",
+       image: "https://proview.io/hs-fs/hubfs/Group%201272628568.png?width=557&height=306&name=Group%201272628568.png",
+       className: "h-7 w-auto",
+     }]
+  } />
+
+  
+  {/* 1st Feature5 */}
+   <div class="lg:ml-11 xl:ml-11 2xl:ml-11">
+  <Feature5
+    title="Secure online exams and protect integrity"
+    description="Proview ensures the integrity and security of online exams. Our AI-powered remote proctoring technology monitors test-takers in real-time, detecting any suspicious activities or cheating attempts. This provides a secure and controlled exam environment."
+    imageSrc="https://proview.io/hs-fs/hubfs/Solution%20page/Enhance%20security%20and%20prevent%20cheating.webp?width=1232&height=822&name=Enhance%20security%20and%20prevent%20cheating.webp"
+    imageAlt="Prevent Cheating"
+    heading='Proctoring Solution for E-Learning Programs'
+  />
+  </div>
+  {/* 2nd Hero1 */}
+  <Hero1
+    heading="Improve learner engagement and interactivity"
+    description="Proview enhances learner engagement through various features including live proctoring, chat support, and real-time monitoring, creating an interactive and engaging experience for participants. This helps maintain learner engagement and involvement."
+   
+    image={{
+      src: "https://proview.io/hs-fs/hubfs/Solution%20page/1_3.webp?width=1232&height=822&name=1_3.webp",
+      alt: "Learner Engagement"
+    }}
+  />
+
+  {/* 2nd Feature5 */}
+  <div class="lg:ml-11 xl:ml-11 2xl:ml-11">
+  <Feature5
+    title="Robust technical support and accessibility"
+    description="Proview is designed to be user-friendly and compatible with various devices and operating systems. We provide prompt technical support to assist participants if they encounter any connectivity or compatibility issues."
+    imageSrc="https://proview.io/hs-fs/hubfs/Solution%20page/1_2.webp?width=1232&height=822&name=1_2.webp"
+    imageAlt="Technical Support"
+  />
+  </div>
+  {/* 3rd Hero1 */}
+  <Hero1
+    heading="Smooth assessment and evaluation process"
+    description="Proview offers customizable assessment features, allowing organizations to design assessments that align with their specific requirements. We provide tools for automated grading and evaluation, streamlining the complete assessment process."
+    
+    image={{
+      src: "https://proview.io/hs-fs/hubfs/Solution%20page/1_4.webp?width=1232&height=822&name=1_4.webp",
+      alt: "Assessment Process"
+    }}
+  />
+
+  {/* 3rd Feature5 */}
+  <div class="lg:ml-11 xl:ml-11 2xl:ml-11">
+  <Feature5
+    title="Personalized support and real-time assistance"
+    description="Proview includes features such as chat support and real-time assistance, allowing participants to seek help and clarification during the exam process. This ensures that learners receive personalized support when needed."
+    imageSrc="https://proview.io/hs-fs/hubfs/Solution%20page/Ensure%20data%20privacy%20and%20compliance.webp?width=1232&height=822&name=Ensure%20data%20privacy%20and%20compliance.webp"
+    imageAlt="Real-Time Assistance"
+  />
+  </div>
+   <Achievements/>
+   <Integration9
+  title="Key Benefits"
+  data={[
+    {
+      title: 'Multi-Device Support',
+      icon: 'https://proview.io/hubfs/Solution%20page/Multi-Device%20%20Support.svg'
+    },
+    {
+      title: 'Protect Exam Integrity',
+      icon: 'https://proview.io/hubfs/Solution%20page/Protect%20Exam%20Integrity.svg'
+    },
+    {
+      title: 'Data Privacy and Compliance',
+      icon: 'https://proview.io/hubfs/Solution%20page/Data%20Privacy%20%20and%20Compliance.svg'
+    },
+    {
+      title: 'Talview Secure Browser',
+      icon: 'https://proview.io/hubfs/Solution%20page/Talview%20Secure%20%20Browser.svg'
+    }
+  ]}
+/>
+
+<Cta11
+  heading="Scale Up Your Exams with Talview's Live Proctoring."
+  buttons={{
+    primary: {
+      text: 'Try free demo',
+      url: 'https://www.talview.com/request-a-demo'
+    }
+  }}
+/>
+
+
+</BaseLayout>

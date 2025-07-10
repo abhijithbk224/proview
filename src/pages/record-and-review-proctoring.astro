@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { FeaturesSectionWithHoverEffects } from '@/components/Home/key-benefits';
+import  HeroSection  from '@/components/Home/heroUpdated';
+import {Hero1} from '@/components/blocks/ui/imageonright.tsx';
+import {Feature5} from '@/components/blocks/ui/imageonleft.tsx';
+import {Cta11} from '@/components/blocks/ui/freedemo.tsx';
+import {Achievements} from '@/components/blocks/ui/achievements.tsx';
+import {Integration12} from '@/components/blocks/ui/blockkeybenefitsproducts.tsx'
+---
+
+<BaseLayout content={{ title: "Remote Proctoring Software with Record & Review",description:"Ensure exam integrity with Proview's Remote Proctoring: Record & Review. Trained proctors easily validate flagged events post-exam for thorough evaluation." }}>
+  
+  <Hero1
+    heading="Elevate Exam Security with Record and Review Proctoring"
+    description="Your trusted partner in fortifying online assessment integrity with post session review"
+    buttons={{
+      primary: { text: "Get a Demo", url: "/signup" }
+    }}
+    image={{
+      src: "https://proview.io/hs-fs/hubfs/Product%20pages/Banner.webp?width=1493&height=987&name=Banner.webp",
+      alt: "Automated proctoring dashboard"
+    }}
+    blue={true};
+  />
+  
+  
+  <Feature5
+    title="Verify Test Taker Identity Before the Exam"
+    description="Ensure the authenticity of test taker by using Proview's advanced face-to-photo ID and voice matching features. Proview Automated Proctoring assigns a confidence score, while our two-factor authentication process limits test access to mitigate malpractice."
+    imageSrc="https://proview.io/hs-fs/hubfs/Product%20pages/Verify%20Test%20Taker%20Identity%20Before%20the%20Exam-1.png?width=1301&height=744&name=Verify%20Test%20Taker%20Identity%20Before%20the%20Exam-1.png"
+    imageAlt="image.png"
+    heading='Overview of Proview Record and Review Proctoring Features'
+  />
+
+  
+  <Hero1
+    heading="Real-Time Monitoring with Secondary Camera"
+    description="The secondary camera improves the integrity of remote exams by providing a wider view of the candidate's surroundings, allowing for quick detection of any potential malpractices."
+    image={{
+      src: "https://proview.io/hs-fs/hubfs/Product%20pages/Real-Time%20Secondary%20Camera%20Monitoring.png?width=1302&height=936&name=Real-Time%20Secondary%20Camera%20Monitoring.png",
+      alt: "ID verification flow"
+    }}
+  />
+
+ 
+  <Feature5
+    title="Post-Session Exam Review"
+    description="Our highly qualified proctors, who have been meticulously selected and trained, prioritize the integrity, security, and privacy of exams. Following the completion of the assessment, certification, or exam, our proctors conduct a thorough review of all event flags, reconfirm the test taker's identity, and ensure the exam's integrity is maintained."
+    imageSrc="https://proview.io/hs-fs/hubfs/Product%20pages/Post-Session%20Exam%20Review.png?width=1367&height=896&name=Post-Session%20Exam%20Review.png"
+    imageAlt="Integrity score dashboard"
+  />
+
+  
+  <Hero1
+    heading="Detailed Integrity Score Report"
+    description="Within 24 hours of the exam's completion, a comprehensive integrity score report is provided for each test taker, highlighting the potential level of malpractice. The report includes an end-to-end recording with accurate time-stamps, as well as event logs categorized as low, medium, or high risk."
+    image={{
+      src: "https://proview.io/hs-fs/hubfs/Product%20pages/Detailed%20Integrity%20Score.png?width=1332&height=698&name=Detailed%20Integrity%20Score.png",
+      alt: "LMS integration examples"
+    }}
+  />
+
+  
+  <Feature5
+    title="Securely Store Exam Recordings for Audit and Compliance"
+    description="Regardless of the exam's level of importance, all proctored exam sessions are recorded and securely stored, ensuring their availability for future audits or compliance purposes."
+    imageSrc="https://proview.io/hs-fs/hubfs/Securely%20Store%20Exam%20Recordings%20for%20Audit%20and%20Compliance.webp?width=662&height=461&name=Securely%20Store%20Exam%20Recordings%20for%20Audit%20and%20Compliance.webp"
+    imageAlt="Taking exam on tablet"
+  />
+   <Achievements/>
+ 
+  <Integration12  title='Key Benefits'  data={[
+  {
+    icon:'https://proview.io/hubfs/Product%20pages/Ensure%20Exam%20Certification%20with%20Qualified%20Proctors.svg',
+    title:'Ensure Exam Certification with Qualified Proctors',
+    description:'Thoroughly reviewed and verified event flags to ensure the integrity of the exam and the authenticity of test takers.'
+  },
+   {
+    icon:'https://proview.io/hubfs/Product%20pages/Data%20security%20and%20Compliance.svg',
+    title:'Data Security and Compliance',
+    description:'Rely on our scalable proctoring platform that enables secure online tests for candidates globally.'
+  },
+    {
+    icon:'https://proview.io/hubfs/Product%20pages/Seamless%20%20Integration.svg',
+    title:'Seamless Integration',
+    description:'Our easy-to-use plug-and-play functionality seamlessly integrates proctoring capabilities into your LMS, test engine, or enrollment tool.'
+  },
+
+    {
+    icon:'https://proview.io/hubfs/Product%20pages/247%20Support.svg',
+    title:'24/7 Support',
+    description:"Experience a streamlined implementation process and achieve significant business outcomes with Proview's reliable services, implementation, and support teams."
+  }
+ ]} />
+
+  
+  <Cta11  heading="Scale Up Your Exams with Proview's AI Powered Proctoring." buttons={{
+    primary:{
+    text:'Try free demo',
+    url:'https://www.talview.com/request-a-demo'
+  }}
+}/>
+</BaseLayout>
