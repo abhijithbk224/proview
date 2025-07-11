@@ -6,13 +6,14 @@ import { Logos3 } from '@/components/logos3';
 import { Feature72 } from '@/components/Home/features-home';
 import { Feature1 } from '@/components/Integrations';
 import { FeaturesSectionWithHoverEffects } from '@/components/Home/key-benefits';
-import { Footer2 } from '@/components/footer2';
 import  HeroSection  from '@/components/Home/heroUpdated';
 import { Testimonial } from '@/components/testimonial-card';
 import Footer7 from '@/components/blocks/ui/footer.tsx';
 import {Navbar3} from '@/components/blocks/ui/header.tsx';
 import {Hero1} from '@/components/blocks/ui/imageonright.tsx';
-import {Integration12} from '@/components/blocks/ui/blockkeybenefitsproducts.tsx'
+import {Integration12} from '@/components/blocks/ui/blockkeybenefitsproducts.tsx';
+import {Testimonial4} from '@/components/blocks/ui/testimonial_home.tsx';
+
 ---
 
 <html lang="en">
@@ -28,9 +29,8 @@ import {Integration12} from '@/components/blocks/ui/blockkeybenefitsproducts.tsx
   <body class="bg-white text-black m-0 overflow-x-hidden">
     <!-- ✅ Navbar (no container wrapping) -->
     <Navbar3 client:load />
-
     <!-- ✅ Main content section -->
-  <main>
+   <main class="pt-20">
     <AnimatedSections client:load>
     <div class="fade-section"><Hero1 heading='Enhanced Exam Security with Our AI-Powered Remote Proctoring Software' description='Reliable, user-friendly and affordable proctoring solution for low to high-stakes exams'image={{
       src:'https://proview.io/hs-fs/hubfs/Home%20Page/Home_banner.webp?width=1413&height=971&name=Home_banner.webp',
@@ -44,6 +44,7 @@ import {Integration12} from '@/components/blocks/ui/blockkeybenefitsproducts.tsx
     <div class="fade-section"><Feature72 /></div>
     <div class="fade-section"><Feature1 /></div>
     <div class="fade-section"><FeaturesSectionWithHoverEffects /></div>
+     <div class="fade-section"><Testimonial4 /></div>
     <div class="fade-section"><Footer7 /></div>   
   </AnimatedSections>
 </main>
