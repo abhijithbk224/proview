@@ -6,7 +6,6 @@ const { content } = Astro.props;
 const { title, description } = content || {};
 
 import { Navbar1 } from '@/components/blocks/proview-nav';
-import { Footer2 } from '@/components/footer2';
 import Footer7 from '@/components/blocks/ui/footer.tsx';
 import { Navbar3 } from '@/components/blocks/ui/header.tsx';
 ---
@@ -23,8 +22,11 @@ import { Navbar3 } from '@/components/blocks/ui/header.tsx';
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
+  
     <Navbar3 client:load />
+	<div class="pt-20">
     <slot />
+	 </div>
     <Footer7 />
   </body>
 </html>

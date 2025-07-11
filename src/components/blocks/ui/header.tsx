@@ -74,14 +74,14 @@ const Navbar3 = ({
   const handleMouseLeave = () => setActiveDropdown(null);
 
   return (
-    <header className="w-full bg-white relative z-50">
+    <header className="w-full bg-white fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-5 lg:px-0 flex h-20 items-center justify-between">
-        {/* Logo */}
+       
         <a href={logo.url} className="flex items-center ml-6 lg:ml-12">
           <img src={logo.src} className="h-12" alt={logo.alt} />
         </a>
 
-        {/* Desktop Menu */}
+      
         <div className="hidden lg:flex items-center space-x-12 mr-6 lg:mr-12">
           {menu.map(item =>
             item.items ? (
@@ -151,7 +151,7 @@ const Navbar3 = ({
           </Button>
         </div>
 
-        {/* Mobile Menu */}
+        
         <div className="lg:hidden">
           <Sheet>
             <SheetTrigger asChild>
