@@ -3,7 +3,7 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/blocks/ui/button";
 
 interface Hero1Props {
-  badge?: string;
+  // badge?: string;
   heading: string;
   description: string;
   blue?: boolean;
@@ -24,7 +24,7 @@ interface Hero1Props {
 }
 
 const Hero1 = ({
-  badge,
+  // badge,
   heading,
   blue = false,
   description,
@@ -40,15 +40,8 @@ const Hero1 = ({
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="grid items-center gap-4 lg:gap-8 lg:grid-cols-2">
-          {/* Text Section */}
-          <div className="order-2 lg:order-1 flex flex-col items-center text-center lg:items-start lg:text-left lg:pr-4 lg:pl-16 lg:translate-x-8">
-            {badge && (
-              <div className="inline-flex items-center px-3 py-1 mb-4 text-sm font-medium text-blue-700 bg-blue-100 border border-blue-200 rounded-full">
-                {badge}
-                <ArrowUpRight className="ml-2 w-4 h-4" />
-              </div>
-            )}
+       <div className="grid items-center gap-4 lg:gap-8 lg:grid-cols-2">
+          <div className="order-2 lg:order-1 flex flex-col items-center text-center lg:items-start lg:text-left lg:pr-4 lg:pl-16">
             <h1
               className={`mb-4 font-semibold text-gray-900 leading-tight max-w-lg ${
                 blue
@@ -79,7 +72,7 @@ const Hero1 = ({
               </div>
             )}
           </div>
-          {/* Image Section */}
+        
           <div className="order-1 lg:order-2 lg:pl-8 flex justify-center lg:justify-start">
             <img
               src={image.src}
