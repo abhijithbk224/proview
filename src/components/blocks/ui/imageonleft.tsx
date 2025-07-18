@@ -39,16 +39,13 @@ const Feature5 = ({
         )}
 
         <div className="grid items-center gap-12 lg:gap-16 lg:grid-cols-2">
-          {/* Image Section */}
-          <div className="lg:pl-12 flex justify-center lg:justify-end">
+          <div className="lg:pl-16 flex justify-center lg:justify-end">
             <img
               src={imageSrc}
               alt={imageAlt}
               className="w-full max-w-md lg:max-w-lg max-h-96 object-contain"
             />
           </div>
-
-          {/* Text Section */}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left lg:pr-8">
             <h2 className="text-base md:text-lg lg:text-xl font-semibold text-gray-900 mb-4 leading-tight max-w-lg">
               {title}
