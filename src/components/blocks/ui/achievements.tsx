@@ -1,5 +1,5 @@
 import React from "react";
-
+import g2Logo from '../../../../public/Logos/G2-Logo.svg'
 interface AchievementsProps {
   heading?: string;
   imgurl?: string;
@@ -7,7 +7,7 @@ interface AchievementsProps {
 
 const Achievements = ({ 
   heading = 'Explore Our Highly Rated Solutions', 
-  imgurl = 'https://proview.io/hubfs/G2-Logo%20(1).svg' 
+  imgurl = '/Logos/G2-Logo.svg',
 }: AchievementsProps) => {
   return (
     <div className="flex flex-col items-center justify-center py-12 px-4 max-w-7xl mx-auto">

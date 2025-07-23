@@ -23,7 +23,7 @@ const Feature72 = ({
       title: "Higher Education",
       description:
         "Ensure exam authenticity for large student groups with AI-driven proctoring featuring secondary camera. Employ multiple authentication and fraud detection layers to create a secure exam environment.",
-      image: "http://proview.io/hs-fs/hubfs/Higher%20education.webp?width=1200&height=640&name=Higher%20education.webp",
+      image: "/Home/Higher-education.webp",
       linkUrl: "/university-proctoring-solution",
     },
     {
@@ -31,7 +31,7 @@ const Feature72 = ({
       title: "Professional Education",
       description:
         "Ensure the integrity of your certification exams with multiple layers of authentication, fraud detection, and a lock-down exam browser that disables access to unauthorized apps, websites, and keyboard shortcuts.",
-      image: "https://proview.io/hs-fs/hubfs/Professional%20Education.webp?width=1200&height=640&name=Professional%20Education.webp ",
+      image: "/Home/Professional-Education.webp",
       linkUrl: "/certification-and-training-proctoring-solution",
     },
   ],

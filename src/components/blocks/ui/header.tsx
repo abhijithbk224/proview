@@ -35,7 +35,7 @@ interface Navbar3Props {
 const Navbar3 = ({
   logo = {
     url: "https://www.proview.io",
-    src: "https://proview.io/hubfs/proview.svg",
+    src: "/Logos/proview_logo.png",
     alt: "proview logo",
   },
   menu = [
