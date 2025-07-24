@@ -35,7 +35,8 @@ const Hero1 = ({
     <section
       className={`py-16 lg:py-20 ${
         blue
-          ? "bg-[url('https://proview.io/hubfs/Frame%2048097318.jpg')] bg-cover bg-center"
+          // ? "bg-[url('https://proview.io/hubfs/Frame%2048097318.jpg')] bg-cover bg-center"
+          ? "bg-[url('/Logos/herocolour.png')] bg-cover bg-center"
           : ""
       }`}
     >
