@@ -1,28 +1,58 @@
----
----
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 – Page Not Found</title>
-    <link rel="stylesheet" href="/assets/global.css" />
-  </head>
-  <body>
-    <div style="text-align:center; padding:4rem;">
-      <h1>404</h1>
-      <p>Sorry, we couldn't find that page.</p>
-      <p>
-        <a 
-          href="/" 
-          style="text-decoration: underline; /* forces underline */
-                 color: inherit;        /* keeps your link color same as text */
-                 font-weight: bold;     /* optional: makes it stand out */
-          ">
-          Return home
-        </a>
-      </p>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 – Page Not Found</title>
+  <link rel="stylesheet" href="/assets/global.css" />
+  <style>
+    /* Fallback styling if global.css is unavailable */
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #f9f9f9;
+    }
+    main {
+      text-align: center;
+      padding: 4rem;
+    }
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin: 0.5rem 0;
+    }
+    .btn-home {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid currentColor;
+      border-radius: 0.25rem;
+      transition: background-color 0.2s ease;
+    }
+    .btn-home:hover,
+    .btn-home:focus {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <main role="main" aria-labelledby="error-title">
+    <h1 id="error-title">404</h1>
+    <p>Sorry, we couldn’t find that page.</p>
+    <p>
+      <a href="/" class="btn-home">
+        Return Home
+      </a>
+    </p>
+  </main>
+</body>
 </html>
