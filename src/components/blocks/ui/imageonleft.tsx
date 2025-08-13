@@ -1,5 +1,3 @@
-
-  
 import { Button } from "@/components/blocks/ui/button";
 
 interface Feature2Props {
@@ -39,7 +37,7 @@ const Feature5 = ({
         )}
 
         <div className="grid items-center gap-12 lg:gap-16 lg:grid-cols-2">
-          <div className="lg:pl-16 flex justify-center lg:justify-end">
+          <div className="lg:pl-16 flex justify-center lg:justify-start">
             <img
               src={imageSrc}
               alt={imageAlt}
